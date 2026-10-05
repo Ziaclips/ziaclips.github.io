@@ -19,12 +19,28 @@
   ol { padding-left: 1.2rem; }
   footer { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 16px; color: var(--muted); font-size: .95rem; }
   footer a { margin-right: 16px; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: flex-end; font-size: .95rem; margin-bottom: 32px; }
+  nav a { white-space: nowrap; }
+  .yt { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 24px 0; }
+  .yt img { display: block; width: 168px; height: auto; }
+  .yt p { margin: 0; flex: 1 1 260px; }
 </style>
 </head>
 <body>
 <main>
+  <nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
   <h1>AI Clipper</h1>
   <p class="lead">A personal tool that turns long podcasts into short vertical clips and schedules them on its owner's own YouTube channel.</p>
+
+  <div class="yt">
+    <a href="https://www.youtube.com" title="YouTube">
+      <picture>
+        <source srcset="https://developers.google.com/static/youtube/images/developed-with-youtube-sentence-case-light.png" media="(prefers-color-scheme: dark)">
+        <img src="https://developers.google.com/static/youtube/images/developed-with-youtube-sentence-case-dark.png" alt="Developed with YouTube" width="168" height="60">
+      </picture>
+    </a>
+    <p>AI Clipper uses YouTube API Services to upload and schedule videos. Read our <a href="privacy.html">Privacy Policy</a>.</p>
+  </div>
 
   <h2>What it does</h2>
   <ol>
